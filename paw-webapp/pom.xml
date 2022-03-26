@@ -24,6 +24,11 @@
         <version>${org.springfamework.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>${org.springfamework.version}</version>
+      </dependency>
+      <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>servlet-api</artifactId>
         <version>${servlet-api.version}</version>
@@ -34,10 +39,17 @@
         <artifactId>jstl</artifactId>
         <version>${jstl.version}</version>
       </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>service</artifactId>
+        <version>${project.version}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
   <modules>
     <module>webapp</module>
+    <module>service</module>
+    <module>interfaces</module>
   </modules>
 </project>
