@@ -44,6 +44,11 @@
         <artifactId>service</artifactId>
         <version>${project.version}</version>
       </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>persistence</artifactId>
+        <version>${project.version}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
@@ -51,5 +56,6 @@
     <module>webapp</module>
     <module>service</module>
     <module>interfaces</module>
+    <module>persistence</module>
   </modules>
 </project>
