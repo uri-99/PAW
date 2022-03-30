@@ -1,5 +1,6 @@
 package ar.edu.itba.paw.persistence;
 
+import ar.edu.itba.paw.model.User;
 import ar.edu.itba.paw.persistance.UserDao;
 import org.springframework.stereotype.Repository;
 
@@ -7,7 +8,7 @@ import org.springframework.stereotype.Repository;
 public class UserJdbcDao implements UserDao {
 
     @Override
-    public String getUsername() {
-        return "PAW from the db";
+    public User getUserById(long id) {
+        return new User(id, "PAW from the db", "secret");
     }
 }

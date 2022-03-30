@@ -57,5 +57,6 @@
     <module>service</module>
     <module>interfaces</module>
     <module>persistence</module>
+    <module>model</module>
   </modules>
 </project>
