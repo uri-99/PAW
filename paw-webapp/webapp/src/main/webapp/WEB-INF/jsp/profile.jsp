@@ -2,7 +2,7 @@
 
 <html>
 <body>
-<h2>Hello <c:out value="${user.username}"/>!</h2>
+<h2><c:out value="${user.username}"/>`s profile</h2>
 <h4>The users id is <c:out value="${user.id}"/></h4>
 </body>
 </html>
