@@ -13,3 +13,8 @@ Link https://www.youtube.com/watch?v=J6yeuluYkYE&ab_channel=ReynaldoBernardDeDio
   Entrar a la pagina y descargarlo xD, parecido al maven pero sin la parte del PATH
 4. Configurar Intelij + Tomcat
   Link (https://www.youtube.com/watch?v=JIRDMGJ66SE&ab_channel=CoolITHelp)
+5. Descargar Postgres, configuracion y pequenia intro
+  Link https://www.youtube.com/watch?v=cHGaDfzJyY4&ab_channel=FaztCode
+6. Integrar con intelij (opcional pero sirve)
+  Link https://www.youtube.com/watch?v=D-WoteCPi14&ab_channel=CodeJava
+7. En WebConfig setear correctamente el path de la bdd, nombre de usuario y contrasenia
