@@ -1,6 +1,7 @@
 package ar.edu.itba.paw.webapp.controller;
 
 import ar.edu.itba.paw.service.UserService;
+import ar.edu.itba.paw.webapp.exceptions.UserNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -25,7 +26,7 @@ public class HelloWorldController {
 
         final ModelAndView mav = new ModelAndView("index");
 
-        mav.addObject("user", us.getUserByID(userId));
+        mav.addObject("user", us.getUserByID(userId).orElseThrow(UserNotFoundException::new));
         return mav;
     }
 
@@ -34,7 +35,7 @@ public class HelloWorldController {
 
         final ModelAndView mav = new ModelAndView("profile");
 
-        mav.addObject("user", us.getUserByID(userId));
+        mav.addObject("user", us.getUserByID(userId).orElseThrow(UserNotFoundException::new));
         return mav;
     }
 
@@ -42,7 +43,7 @@ public class HelloWorldController {
     public ModelAndView goodbyeWorld() {
         final ModelAndView mav = new ModelAndView("byebye");
 
-        mav.addObject("user", us.getUserByID(1));
+        mav.addObject("user", us.getUserByID(1).orElseThrow(UserNotFoundException::new));
         return mav;
     }
 }
